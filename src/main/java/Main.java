@@ -7,7 +7,19 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        /*
+        Account account =
+                new Account("Nil", "Barcelona", 2000.0, "SAVINGS-0011");
+
+        String a = "Jaume";
+        String b = "jaume";
+        String c = "jaume";
+        System.out.println(a.hashCode());
+        System.out.println(b.hashCode());
+        System.out.println(c.hashCode());
+
+
+
+
 
         Scanner input = new Scanner(System.in);
 
@@ -35,8 +47,10 @@ public class Main {
             }
         }
 
+        System.out.println(concat("Jaume", "Sánchez"));
+        Scanner input2 = new Scanner(System.in);
         String firstname = "Jaume";
-        String lastName = null;
+        String lastName = input2.nextLine();
         String fullName = null;
 
         try {
@@ -47,7 +61,7 @@ public class Main {
 
         System.out.println(fullName);
 
-         */
+
 
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Utilidades.multiply(2000000, 3000000));
