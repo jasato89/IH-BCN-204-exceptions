@@ -5,6 +5,20 @@ import java.util.Scanner;
 
 public class Utilidades {
 
+
+    public static int multiply(int y, int x) {
+        int result = x * y;
+
+        // result = 10 * 2
+        // result/10 = 2;
+
+        if (result/x == y) {
+            return result;
+        }
+        throw new ArithmeticException("No se puede garantizar la integridad de la operación");
+    }
+
+
     public static int stringToInt(String number)  {
         try {
             return Integer.parseInt(number);

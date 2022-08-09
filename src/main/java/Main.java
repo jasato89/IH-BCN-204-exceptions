@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args)  {
 
+        /*
+
         Scanner input = new Scanner(System.in);
 
         try {
@@ -33,5 +35,32 @@ public class Main {
             }
         }
 
+        String firstname = "Jaume";
+        String lastName = null;
+        String fullName = null;
+
+        try {
+         fullName = concat(firstname, lastName);
+        } catch (TextTooLongException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(fullName);
+
+         */
+
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Utilidades.multiply(2000000, 3000000));
+
+
+
+    }
+
+    public static String concat(String firstname, String lastName) {
+        if (firstname == null || firstname.isEmpty() || lastName == null || lastName.isEmpty()) {
+
+            throw new TextTooLongException("Mucho texto");
+        }
+        return firstname.concat(" ").concat(lastName);
     }
 }
